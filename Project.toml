@@ -3,5 +3,13 @@ uuid = "50eceb64-6ea6-4f18-a133-c6b75353312a"
 authors = ["lorenzoh <lorenz.ohly@gmail.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
+FluxTraining = "7bf95e4d-ca32-48da-9824-f0dc5310474f"
+InlineTest = "bd334432-b1e7-49c7-a2dc-dd9149e4ebd6"
+Markdown = "d6f4376e-aef5-505a-96c1-9c027394607a"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+Zygote = "e88e6eb3-aa80-5325-afca-941959d7151f"
+
 [compat]
 julia = "1"

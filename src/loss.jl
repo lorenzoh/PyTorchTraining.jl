@@ -5,4 +5,10 @@ end
 
 convertlossfunction(lossfn::PyObject) = lossfn
 convertlossfunction(::typeof(Flux.Losses.mse)) = torch.nn.functional.mse_loss
-convertlossfunction(::typeof(Flux.Losses.logitcrossentropy)) = torch.nn.functional.mse_loss
+
+
+pylogitcrossentropy(ypreds, ys) =
+    torch.nn.functional.cross_entropy(ypreds, ys.argmax(dim=1))
+
+convertlossfunction(::typeof(Flux.logitcrossentropy)) = pylogitcrossentropy
+convertlossfunction(l::typeof(pylogitcrossentropy)) = l

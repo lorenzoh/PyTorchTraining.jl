@@ -13,4 +13,5 @@ Zygote = "e88e6eb3-aa80-5325-afca-941959d7151f"
 
 [compat]
 InlineTest = "0.2"
+Zygote = "0.6"
 julia = "1"

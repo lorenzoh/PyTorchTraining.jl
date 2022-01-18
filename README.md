@@ -58,7 +58,7 @@ dls = methoddataloaders(data, method, 64)
 c = length(blocks[2].classes)
 
 # Create a `Learner`
-model = loadresnet(length(blocks[2].classes))
+model = loadresnet(c)
 learner = Learner(
     loadresnet(length(blocks[2].classes)),
     dls,

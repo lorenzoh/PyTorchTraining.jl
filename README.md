@@ -2,7 +2,7 @@
 
 This Julia package allows you to use and train PyTorch models with [FluxTraining.jl](https://github.com/FluxML/FluxTraining.jl). 
 
-**This package is very WIP right now.**
+**This is a prototype. A more general approach to integrating PyTorch models in the FluxML ecosystem is being created at [PyCallChainRules.jl](https://github.com/rejuvyesh/PyCallChainRules.jl)**
 
 ## How do I use this?
 
